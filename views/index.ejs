@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= page_data.title %></title>
+</head>
+
+<body>
+    <h1><%= page_data.titre %></h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Nom</th>
+            <th>Valeur</th>
+        </tr>
+        <% data_table.forEach(entry=> { %>
+            <tr>
+                <td>
+                    <%= entry.id_data %>
+                </td>
+                <td>
+                    <%= entry.name %>
+                </td>
+                <td>
+                    <%= entry.value %>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+</body>
+
+</html>

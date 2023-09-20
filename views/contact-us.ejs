@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= page_data.title %></title>
+</head>
+<body>
+    <h1><%= page_data.titre %></h1>
+    <p>Wesh</p>
+    <form id="contactForm">
+        <div id="response"></div>
+        <label for="first_name">
+            Prénom: <input type="name" name="first_name"><br>
+        </label>
+        <label for="last_name">
+            Nom: <input type="name" name="last_name"><br>
+        </label>
+        <label for="email">
+            Adresse email: <input type="email" name="email"><br>
+        </label>
+        <label for="tel">
+            Numéro de téléphone: <input type="tel" name="tel"><br>
+        </label>
+        <label for="message">
+            Message: <textarea name="message" cols="30" rows="10"></textarea><br>
+        </label>
+        <button type="submit">
+            Envoyer le message
+        </button>
+    </form>
+    
+    <script src="/js/jquery.js"></script>
+    <script src="/js/contactForm.js"></script>
+</body>
+</html>
